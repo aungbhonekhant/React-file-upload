@@ -1,38 +1,146 @@
-.App {
-  text-align: center;
+label {
+  display: inline-block;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.wrapper {
+  height: 100vh !important;
+  background-color: rgb(221, 221, 221);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.d-flex {
+  display: flex;
+}
+
+.flex-grow-1 {
+  flex-grow: 1 !important;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  width: 100%;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
   }
 }
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.text-primary {
+  color: cadetblue !important;
+}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) * -0.5);
+  margin-left: calc(var(--bs-gutter-x) * -0.5);
+}
+
+.row > * {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) * 0.5);
+  padding-left: calc(var(--bs-gutter-x) * 0.5);
+  margin-top: var(--bs-gutter-y);
+}
+
+.mx-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.card {
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  box-shadow: 5px 5px 12px 0px rgba(0, 0, 0, 0.08);
 }
 
-.App-link {
-  color: #61dafb;
+.card-header {
+  padding: 0.5rem 1rem;
+  margin-bottom: 0;
+  background-color: rgba(0, 0, 0, 0.03);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card-body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+}
+
+.mt-2 {
+  margin-top: 1.5rem;
+}
+
+.btn {
+  border-radius: 0px !important;
+}
+
+.form-label {
+  margin-bottom: 0, 5rem;
+}
+
+.form-group {
+  position: relative;
+}
+
+@media (min-width: 576px) {
+  .col-sm-12 {
+    flex: 0 0 auto;
+    width: 100%;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+@media (min-width: 768px) {
+  .col-md-6 {
+    flex: 0 0 auto;
+    width: 50%;
   }
 }
